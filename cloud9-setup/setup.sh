@@ -8,11 +8,6 @@ if ! [ -x "$(command -v kubectl)" ]; then
     sudo mv ./kubectl /usr/local/bin/kubectl
 fi
 
-echo "Inatlling/Upgrading awscli..."
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
-sudo ./aws/install
-
 echo "Installing jq, gettext, bash-completion, moreutils, pngcrush, ImageMagick..."
 
 #if ubuntu use apt-get else use yum (amazon linux)
